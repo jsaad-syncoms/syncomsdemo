@@ -1,0 +1,648 @@
+html {
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    height: 200vh;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/earth_graphic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.topbar {
+    width: 95%;
+    padding: 20px 2.5%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    z-index: 1000;
+    transition: all 300ms ease-out;
+/*    background-color: rgba(255,255,255, 1);*/
+}
+
+.logo {
+    width: 250px;
+/*    border: 1px solid white;*/
+    position: relative;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.white-logo {
+    position: absolute;
+    opacity: 1;
+}
+
+.colour-logo {
+    position: relative;
+    opacity: 0;
+}
+
+.noOpacity {
+    opacity: 0;
+}
+
+.fullOpacity {
+    opacity: 1;
+}
+
+.navbar {
+    display: none;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.navbar ul li {
+    padding: 0 10px;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease-out;
+    background-color: transparent;
+}
+
+.navbar ul li:hover {
+    background-color: #3ba9e1;
+}
+
+.scrolled {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.scrolled-black {
+    background-color: #000000 !important;
+}
+
+.burger {
+    width: 25px;
+}
+
+.burgerline {
+    height: 3px;
+    margin: 4px 0;
+    background-color: #ffffff;
+    transition: all 300ms ease-out;
+}
+
+.overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.big {
+    width: 400px;
+}
+
+.overlay h1 {
+    margin: 20px;
+    line-height: 2;
+    font-size: 30px;
+}
+
+.overlay p {
+    margin: 0 12.5%;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+section {
+    width: 95%;
+    padding: 2.5%;
+}
+
+section h2 {
+    color: #186A94;
+    font-size: 25px;
+    line-height: 1.2;
+    width: 100%;
+}
+
+h4 {
+    color: #186A94;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.illustrations {
+    padding: 5%;
+    width: 90%;
+}
+
+.illustration {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.printing {
+    flex-direction: column-reverse;
+}
+
+figure {
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.for-marketers {
+    margin-left: 0;
+}
+
+.for-printers {
+    margin-right: 0;
+}
+
+article p {
+    margin: 10px 0;
+    line-height: 1.2;
+    color: #186A94;
+    font-size: 18px;
+}
+
+.why-syncoms {
+/*    background-color: #186A94;*/
+    background-image: linear-gradient(90deg, #186a94, #1488CC);
+}
+
+.why-syncoms .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.why-syncoms h2 {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.why-syncoms-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.why-syncoms-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 45px;
+    transition: all 300ms ease-out;
+}
+
+.detail-icon {
+    width: 180px;
+}
+
+.detail-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.detail-text h4 {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.detail-text p {
+    color: #ffffff;
+    line-height: 1.5;
+    margin: 0 10px;
+}
+
+.why-syncoms-detail:hover {
+    transform: translateY(-25px);
+}
+
+.our-clients h2, .testimonials h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.client-logos {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client-logo {
+    width: 25%;
+    margin: 25px 0;
+    position: relative;
+}
+
+.client-logo img {
+    width: 100%;
+    height: auto;
+/*    transition: all 150ms ease-out;*/
+}
+
+.grey-logo {
+    position: absolute;
+    opacity: 1;
+}
+
+.coloured-logo {
+    position: relative;
+    opacity: 0;
+}
+
+.client-logo:hover .grey-logo {
+    opacity: 0;
+}
+
+.client-logo:hover .coloured-logo {
+    opacity: 1;
+}
+
+.client-testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.testimonial {
+    width: 100%;
+    flex-direction: column;
+    color: #186A94;
+    margin: 10% 0;
+}
+
+.testimonial:first-child {
+    margin-top: 0;
+}
+
+.client-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+/*    border: 1px solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.client-img img {
+    width: 100%;
+    height: auto;
+}
+
+.client-name {
+    margin-left: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    width: 50%;
+}
+
+.clientName {
+    color: #575757;
+}
+
+.testimonial-text p {
+    margin-top: 20px;
+    line-height: 1.3;
+}
+
+footer {
+    background-image: linear-gradient(90deg, #186a94, #1488CC);
+    color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    font-size: 18px;
+}
+
+.address-info, .follow-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid;
+}
+
+address {
+    margin: 25px 0;
+    text-align: center;
+}
+
+/*
+.address-info .logo {
+    width: 90%;
+}
+*/
+
+.address-country {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-content h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+/*    height: 60.66px;*/
+}
+
+.social {
+    display: flex;
+/*    margin: 12.5px 0;*/
+    box-shadow: none;
+    transition: all 300ms ease-in-out;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 35px;
+    padding-left: 0px;
+    transition: all 300ms;
+}
+
+.social:hover {
+    box-shadow: inset 5px 0 0 0 white;
+}
+
+.social:hover .social-icon {
+    padding-left: 20px;
+}
+
+.request-demo {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact-form {
+    margin-top: 25px;
+}
+
+fieldset {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-names {
+    width: 48%;
+}
+
+input {
+    width: 98%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[placeholder], textarea[placeholder] {
+    padding-left: 2%;
+    font-family: 'Lato', 'Helvetica', sans-serif;
+}
+
+textarea[placeholder] {
+    padding-top: 10px;
+}
+
+.flex-fieldset {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 98%;
+    resize: none;
+    border-radius: 5px;
+    border: none;
+    height: 150px;
+    padding: 0;
+}
+
+#submit {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    background-color: #065380;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 520px) {
+    .overlay h1 {
+        margin: 40px;
+        font-size: 40px;
+    }
+    
+    .overlay p {
+        margin: 0 25%;
+        font-size: 20px;
+    }
+    
+    .testimonial {
+        margin: 5% 0;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .navbar {
+        display: flex;
+    }
+    
+    .burger {
+        display: none;
+    }
+    
+    .marketing, .printing {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    section h2 {
+        width: 80%;
+    }
+    
+    figure {
+        width: 50%;
+    }
+    
+    article {
+        width: 40%;
+    }
+    
+    .illustrations {
+        padding: 2.5%;
+        width: 95%;
+    }
+    
+    .for-marketers {
+        margin-left: 10%;
+    }
+    
+    .for-printers {
+        margin-right: 10%;
+    }
+    
+    .why-syncoms-details {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .why-syncoms-detail {
+        height: 394px;
+    }
+    
+    .why-syncoms-detail {
+        margin-bottom: 0;
+        width: 30%;
+    }
+    
+    .client-logos {
+        margin-top: 80px;
+    }
+    
+    .testimonial {
+        width: 45%;
+        margin: 2.5%;
+    }
+    
+    .client-testimonials {
+        margin-top: 50px;
+        text-align: left;
+    }
+    
+    .client-title {
+        justify-content: flex-start;
+    }
+    
+    article {
+        margin-top: 0;
+    }
+    
+    .client-logos {
+        flex-direction: row;
+    }
+    
+    .client-logo {
+        width: 13%;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .address-info, .follow-us {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 24%;
+        border-right: 1px solid;
+        border-bottom: 0;
+        padding: 0;
+    }
+    
+    address {
+        text-align: left;
+    }
+    
+    .social {
+        justify-content: flex-start;
+    }
+    
+    .request-demo {
+        width: 48%;
+        text-align: left;
+        padding-top: 0;
+    }
+    
+    .address-info .logo {
+        width: 90%;
+    }
+    
+    .footer-content h2 {
+        margin-bottom: 12px;
+    }
+
+}
